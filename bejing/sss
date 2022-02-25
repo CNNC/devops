@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    service.cloud.tencent.com/cross-region-id: ap-shanghai
+    service.cloud.tencent.com/cross-type: PVGW
+    service.cloud.tencent.com/snat-pro-info: '{"snatIps":[{"subnetId":"subnet-py1lzv5h"}]}'
+    service.kubernetes.io/loadbalance-id: lb-q4adklnn
+    service.kubernetes.io/tke-existed-lbid: lb-q4adklnn
+  name: sh-cross-gz-service
+  namespace: prod
+spec:
+  type: LoadBalancer
+  ports:
+  - name: 14268-14268-tcp
+    port: 14268
+    protocol: TCP
+    targetPort: 14268
+  selector:
+    k8s-app: tapm-collector
+    qcloud-app: tapm-collector
+status:
+  loadBalancer:
+    ingress:
+    - ip: 30.41.81.98
