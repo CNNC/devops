@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-gmvk4enf""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-f2e08mwf
+  name: cd-cross-bj-ingress-80
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: cd-cross-bj-service
+          servicePort: 80        
+        path: /
+status:
+  loadBalancer:
+    ingress:
