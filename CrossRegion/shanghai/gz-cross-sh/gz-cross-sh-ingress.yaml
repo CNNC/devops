@@ -17,4 +17,3 @@ spec:
           serviceName: gz-cross-sh-service
           servicePort: 80        
         path: /
-status:
