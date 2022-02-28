@@ -1,0 +1,298 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-348izcrx
+  name: bj-cross-gz-ingress-80
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort: 80        
+        path: /
+status:
+  loadBalancer:
+    ingress:"
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-349izcrx
+  name: bj-cross-gz-ingress-4317
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort: 4317        
+        path: /
+status:
+  loadBalancer:
+    ingress:"
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-350izcrx
+  name: bj-cross-gz-ingress-5678
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort: 5678        
+        path: /
+status:
+  loadBalancer:
+    ingress:"
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-351izcrx
+  name: bj-cross-gz-ingress-5679
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort: 5679        
+        path: /
+status:
+  loadBalancer:
+    ingress:"
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-352izcrx
+  name: bj-cross-gz-ingress-9411
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort: 9411        
+        path: /
+status:
+  loadBalancer:
+    ingress:"
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-353izcrx
+  name: bj-cross-gz-ingress-11800
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort: 11800        
+        path: /
+status:
+  loadBalancer:
+    ingress:"
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-354izcrx
+  name: bj-cross-gz-ingress-14250
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort: 14250        
+        path: /
+status:
+  loadBalancer:
+    ingress:"
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-355izcrx
+  name: bj-cross-gz-ingress-14268
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort: 14268        
+        path: /
+status:
+  loadBalancer:
+    ingress:"
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-356izcrx
+  name: bj-cross-gz-ingress-55678
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort: 55678        
+        path: /
+status:
+  loadBalancer:
+    ingress:"
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-357izcrx
+  name: bj-cross-gz-ingress-55679
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort: 55679        
+        path: /
+status:
+  loadBalancer:
+    ingress:"
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-358izcrx
+  name: bj-cross-gz-ingress-55680
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort: 55680        
+        path: /
+status:
+  loadBalancer:
+    ingress:"
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-359izcrx
+  name: bj-cross-gz-ingress-
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort:         
+        path: /
+status:
+  loadBalancer:
+    ingress:"
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-chengdu
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-jxf2ocnw
+    ingress.cloud.tencent.com/snat-pro-info: '{""""snatIps"""":[{""""subnetId"""":""""subnet-gmvk4enf""""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-360izcrx
+  name: bj-cross-gz-ingress-
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: bj-cross-gz-service
+          servicePort:         
+        path: /
+status:
+  loadBalancer:
+    ingress:"
