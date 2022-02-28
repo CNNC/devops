@@ -7,7 +7,6 @@ metadata:
     ingress.cloud.tencent.com/cross-vpc-id: vpc-q9jx6suk
     ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-lvb17sib""}]}'
     ingress.kubernetes.io/tke-existed-lbid: lb-nsl4falh
-    kubernetes.io/ingress.qcloud-loadbalance-id: lb-88i9jvmz
   name: sh-cross-bj-ingress-80
   namespace: prod
 spec:
