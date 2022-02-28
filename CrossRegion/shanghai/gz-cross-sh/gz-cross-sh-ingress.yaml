@@ -17,3 +17,7 @@ spec:
           serviceName: gz-cross-sh-service
           servicePort: 80        
         path: /
+
+
+
+所有ingress已添加
