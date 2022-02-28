@@ -4,10 +4,10 @@ metadata:
   annotations:
     service.cloud.tencent.com/cross-region-id: ap-shanghai
     service.cloud.tencent.com/cross-type: PVGW
-    service.cloud.tencent.com/snat-pro-info: '{"snatIps":[{"subnetId":"subnet-lvb17sib"}]}'
-    service.kubernetes.io/loadbalance-id: lb-nsl4falh
-    service.kubernetes.io/tke-existed-lbid: lb-nsl4falh
-  name: sh-cross-bj-service
+    service.cloud.tencent.com/snat-pro-info: '{"snatIps":[{"subnetId":"subnet-py1lzv5h"}]}'
+    service.kubernetes.io/loadbalance-id: lb-q4adklnn
+    service.kubernetes.io/tke-existed-lbid: lb-q4adklnn
+  name: sh-cross-gz-service
   namespace: prod
 spec:
   type: LoadBalancer
