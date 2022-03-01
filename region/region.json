@@ -1,0 +1,38 @@
+[{id: 1, region: "ap-guangzhou", code: "gz", name: "广州", area: "华南地区", isDefault: false,…},…]
+0: {id: 1, region: "ap-guangzhou", code: "gz", name: "广州", area: "华南地区", isDefault: false,…}
+1: {id: 12, region: "ap-guangzhou-open", code: "gzopen", name: "广州Open", area: "华南地区", isDefault: null,…}
+2: {id: 54, region: "ap-qingyuan", code: "qy", name: "清远", area: "华南地区", isDefault: null,…}
+3: {id: 73, region: "ap-qingyuan-xinan", code: "qyxa", name: "清远信安", area: "华南地区", isDefault: null,…}
+4: {id: 37, region: "ap-shenzhen", code: "szx", name: "深圳", area: "华南地区", isDefault: null,…}
+5: {id: 11, region: "ap-shenzhen-fsi", code: "szjr", name: "深圳金融", area: "华南地区", isDefault: null,…}
+6: {id: 4, region: "ap-shanghai", code: "sh", name: "上海", area: "华东地区", isDefault: false,…}
+7: {id: 7, region: "ap-shanghai-fsi", code: "shjr", name: "上海金融", area: "华东地区", isDefault: false,…}
+8: {id: 33, region: "ap-nanjing", code: "nj", name: "南京", area: "华东地区", isDefault: true,…}
+9: {id: 31, region: "ap-jinan-ec", code: "jnec", name: "济南", area: "华东地区", isDefault: null,…}
+10: {id: 32, region: "ap-hangzhou-ec", code: "hzec", name: "杭州", area: "华东地区", isDefault: null,…}
+11: {id: 34, region: "ap-fuzhou-ec", code: "fzec", name: "福州", area: "华东地区", isDefault: null,…}
+12: {id: 8, region: "ap-beijing", code: "bj", name: "北京", area: "华北地区", isDefault: false,…}
+13: {id: 36, region: "ap-tianjin", code: "tsn", name: "天津", area: "华北地区", isDefault: null,…}
+14: {id: 53, region: "ap-shijiazhuang-ec", code: "sjwec", name: "石家庄", area: "华北地区", isDefault: null,…}
+15: {id: 46, region: "ap-beijing-fsi", code: "bjjr", name: "北京金融", area: "华北地区", isDefault: null,…}
+16: {id: 35, region: "ap-wuhan-ec", code: "whec", name: "武汉", area: "华中地区", isDefault: null,…}
+17: {id: 45, region: "ap-changsha-ec", code: "csec", name: "长沙", area: "华中地区", isDefault: null,…}
+18: {id: 16, region: "ap-chengdu", code: "cd", name: "成都", area: "西南地区", isDefault: false,…}
+19: {id: 19, region: "ap-chongqing", code: "cq", name: "重庆", area: "西南地区", isDefault: false,…}
+20: {id: 55, region: "ap-hefei-ec", code: "hfeec", name: "合肥", area: "华东地区", isDefault: null,…}
+21: {id: 56, region: "ap-shenyang-ec", code: "sheec", name: "沈阳", area: "东北地区", isDefault: null,…}
+22: {id: 57, region: "ap-xian-ec", code: "xiyec", name: "西安", area: "西北地区", isDefault: null,…}
+23: {id: 71, region: "ap-zhengzhou-ec", code: "cgoec", name: "郑州", area: "华中地区", isDefault: null,…}
+24: {id: 39, region: "ap-taipei", code: "tpe", name: "中国台北", area: "港澳台地区", isDefault: null, zones: [,…]}
+25: {id: 5, region: "ap-hongkong", code: "hk", name: "中国香港", area: "港澳台地区", isDefault: null,…}
+26: {id: 9, region: "ap-singapore", code: "sg", name: "新加坡", area: "亚太东南", isDefault: null,…}
+27: {id: 23, region: "ap-bangkok", code: "th", name: "曼谷", area: "亚太东南", isDefault: null,…}
+28: {id: 72, region: "ap-jakarta", code: "jkt", name: "雅加达", area: "亚太东南", isDefault: null,…}
+29: {id: 21, region: "ap-mumbai", code: "in", name: "孟买", area: "亚太南部", isDefault: false, zones: [,…]}
+30: {id: 18, region: "ap-seoul", code: "kr", name: "首尔", area: "亚太东北", isDefault: false, zones: [,…]}
+31: {id: 25, region: "ap-tokyo", code: "jp", name: "东京", area: "亚太东北", isDefault: null, zones: [,…]}
+32: {id: 15, region: "na-siliconvalley", code: "usw", name: "硅谷", area: "美国西部", isDefault: false,…}
+33: {id: 22, region: "na-ashburn", code: "use", name: "弗吉尼亚", area: "美国东部", isDefault: null,…}
+34: {id: 6, region: "na-toronto", code: "ca", name: "多伦多", area: "北美地区", isDefault: false,…}
+35: {id: 17, region: "eu-frankfurt", code: "de", name: "法兰克福", area: "欧洲地区", isDefault: false,…}
+area: "欧洲地区"
