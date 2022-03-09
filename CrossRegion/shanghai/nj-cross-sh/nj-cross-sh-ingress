@@ -5,7 +5,7 @@ metadata:
     ingress.cloud.tencent.com/cross-region-id: ap-nanjing
     ingress.cloud.tencent.com/cross-type: PVGW
     ingress.cloud.tencent.com/cross-vpc-id: vpc-fnzzdvjn
-    ingress.cloud.tencent.com/snat-pro-info: '{"snatIps":[{"subnetId":"subnet-bhyvjxmq"}]}'
+    ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-bhyvjxmq""}]}'
     ingress.kubernetes.io/tke-existed-lbid: lb-238tvmx6
   name: nj-cross-sh-ingress-80
   namespace: prod
@@ -15,5 +15,240 @@ spec:
       paths:
       - backend:
           serviceName: nj-cross-sh-service
-          servicePort: 80
+          servicePort: 80        
         path: /
+status:
+  loadBalancer:
+    ingress:
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-nanjing
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-fnzzdvjn
+    ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-bhyvjxmq""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-238tvmx7
+  name: nj-cross-sh-ingress-4317
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: nj-cross-sh-service
+          servicePort: 4317        
+        path: /
+status:
+  loadBalancer:
+    ingress:
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-nanjing
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-fnzzdvjn
+    ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-bhyvjxmq""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-238tvmx8
+  name: nj-cross-sh-ingress-5678
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: nj-cross-sh-service
+          servicePort: 5678        
+        path: /
+status:
+  loadBalancer:
+    ingress:
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-nanjing
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-fnzzdvjn
+    ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-bhyvjxmq""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-238tvmx9
+  name: nj-cross-sh-ingress-5679
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: nj-cross-sh-service
+          servicePort: 5679        
+        path: /
+status:
+  loadBalancer:
+    ingress:
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-nanjing
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-fnzzdvjn
+    ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-bhyvjxmq""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-238tvmx10
+  name: nj-cross-sh-ingress-9411
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: nj-cross-sh-service
+          servicePort: 9411        
+        path: /
+status:
+  loadBalancer:
+    ingress:
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-nanjing
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-fnzzdvjn
+    ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-bhyvjxmq""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-238tvmx11
+  name: nj-cross-sh-ingress-11800
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: nj-cross-sh-service
+          servicePort: 11800        
+        path: /
+status:
+  loadBalancer:
+    ingress:
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-nanjing
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-fnzzdvjn
+    ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-bhyvjxmq""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-238tvmx12
+  name: nj-cross-sh-ingress-14250
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: nj-cross-sh-service
+          servicePort: 14250        
+        path: /
+status:
+  loadBalancer:
+    ingress:
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-nanjing
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-fnzzdvjn
+    ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-bhyvjxmq""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-238tvmx13
+  name: nj-cross-sh-ingress-14268
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: nj-cross-sh-service
+          servicePort: 14268        
+        path: /
+status:
+  loadBalancer:
+    ingress:
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-nanjing
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-fnzzdvjn
+    ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-bhyvjxmq""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-238tvmx14
+  name: nj-cross-sh-ingress-55678
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: nj-cross-sh-service
+          servicePort: 55678        
+        path: /
+status:
+  loadBalancer:
+    ingress:
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-nanjing
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-fnzzdvjn
+    ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-bhyvjxmq""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-238tvmx15
+  name: nj-cross-sh-ingress-55679
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: nj-cross-sh-service
+          servicePort: 55679        
+        path: /
+status:
+  loadBalancer:
+    ingress:
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.cloud.tencent.com/cross-region-id: ap-nanjing
+    ingress.cloud.tencent.com/cross-type: PVGW
+    ingress.cloud.tencent.com/cross-vpc-id: vpc-fnzzdvjn
+    ingress.cloud.tencent.com/snat-pro-info: '{""snatIps"":[{""subnetId"":""subnet-bhyvjxmq""}]}'
+    ingress.kubernetes.io/tke-existed-lbid: lb-238tvmx16
+  name: nj-cross-sh-ingress-55680
+  namespace: prod
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: nj-cross-sh-service
+          servicePort: 55680        
+        path: /
+status:
+  loadBalancer:
+    ingress:
+
+
