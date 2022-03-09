@@ -2,12 +2,12 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    service.cloud.tencent.com/cross-region-id: ap-beijing
+    service.cloud.tencent.com/cross-region-id: ap-tianjin
     service.cloud.tencent.com/cross-type: PVGW
-    service.cloud.tencent.com/snat-pro-info: '{"snatIps":[{"subnetId":"subnet-or3xp7fd"}]}'
-    service.kubernetes.io/loadbalance-id: lb-rnpcv4ip
-    service.kubernetes.io/tke-existed-lbid: lb-rnpcv4ip
-  name: bj-cross-sh-service
+    service.cloud.tencent.com/snat-pro-info: '{"snatIps":[{"subnetId":"subnet-n4fdw45n"}]}'
+    service.kubernetes.io/loadbalance-id: lb-nxbxyk5p
+    service.kubernetes.io/tke-existed-lbid: lb-nxbxyk5p
+  name: tj-cross-sh-service
   namespace: prod
 spec:
   type: LoadBalancer

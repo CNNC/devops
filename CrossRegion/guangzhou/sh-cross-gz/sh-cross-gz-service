@@ -59,6 +59,3 @@ spec:
   selector:
     k8s-app: tapm-collector
     qcloud-app: tapm-collector
-status:
-  loadBalancer:
-    ingress:
