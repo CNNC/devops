@@ -1,0 +1,162 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    service.cloud.tencent.com/direct-access: "false"
+    service.kubernetes.io/loadbalance-id: lb-42sumnze
+    service.kubernetes.io/service.extensiveParameters: '{"AddressIPVersion":"IPV4"}'
+    service.kubernetes.io/tke-existed-lbid: lb-42sumnze
+    service.cloud.tencent.com/specify-protocol: {"55681":{"protocol":["HTTPS"],"hosts":{"ap-guangzhou.apm.tencentcs.com":{"tls":"apmhttpsgz-ulwp6y9t"}}}} 
+  creationTimestamp: "2021-07-22T16:41:27Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:service.kubernetes.io/loadbalance-id: {}
+      f:status:
+        f:loadBalancer:
+          f:ingress: {}
+    manager: service-controller
+    operation: Update
+    time: "2021-07-22T16:41:58Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:service.cloud.tencent.com/direct-access: {}
+          f:service.kubernetes.io/service.extensiveParameters: {}
+          f:service.kubernetes.io/tke-existed-lbid: {}
+      f:spec:
+        f:externalTrafficPolicy: {}
+        f:ports:
+          .: {}
+          k:{"port":4317,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+          k:{"port":5678,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+          k:{"port":9411,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+          k:{"port":11800,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+          k:{"port":14250,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+          k:{"port":14268,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+          k:{"port":55678,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+          k:{"port":55679,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+          k:{"port":55681,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+        f:selector:
+          .: {}
+          f:k8s-app: {}
+          f:qcloud-app: {}
+        f:sessionAffinity: {}
+        f:type: {}
+    manager: tke-apiserver
+    operation: Update
+    time: "2022-03-08T12:01:38Z"
+  name: taw-collector-service-tcp2
+  namespace: prod
+  resourceVersion: "25986758990"
+  selfLink: /api/v1/namespaces/prod/services/taw-collector-service-tcp2
+  uid: f0e498e7-1108-44b5-8fbd-10ce81182809
+spec:
+  clusterIP: 11.166.126.108
+  externalTrafficPolicy: Cluster
+  ports:
+  - name: 14250-14250-tcp
+    nodePort: 30381
+    port: 14250
+    protocol: TCP
+    targetPort: 14250
+  - name: 11800-11800-tcp
+    nodePort: 32449
+    port: 11800
+    protocol: TCP
+    targetPort: 11800
+  - name: 9411-9411-tcp
+    nodePort: 31831
+    port: 9411
+    protocol: TCP
+    targetPort: 9411
+  - name: 14268-14268-tcp
+    nodePort: 32231
+    port: 14268
+    protocol: TCP
+    targetPort: 14268
+  - name: 55678-55678-tcp
+    nodePort: 32479
+    port: 55678
+    protocol: TCP
+    targetPort: 55678
+  - name: 55679-55679-tcp
+    nodePort: 30611
+    port: 55679
+    protocol: TCP
+    targetPort: 55679
+  - name: 5678-5678-tcp
+    nodePort: 31430
+    port: 5678
+    protocol: TCP
+    targetPort: 5678
+  - name: 4317-4317-tcp-2yqkm2jkbha
+    nodePort: 32073
+    port: 4317
+    protocol: TCP
+    targetPort: 4317
+  - name: 55681-55681-tcp-6wabvw6pha8
+    nodePort: 30061
+    port: 55681
+    protocol: TCP
+    targetPort: 55681
+  selector:
+    k8s-app: tapm-collector
+    qcloud-app: tapm-collector
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 106.55.209.93
