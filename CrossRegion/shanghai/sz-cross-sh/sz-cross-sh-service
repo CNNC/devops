@@ -1,0 +1,61 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    service.cloud.tencent.com/cross-region-id: ap-shenzhen
+    service.cloud.tencent.com/cross-type: PVGW
+    service.cloud.tencent.com/snat-pro-info: '{"snatIps":[{"subnetId":"subnet-dvae57hu"}]}'
+    service.kubernetes.io/loadbalance-id: lb-24pehl4y
+    service.kubernetes.io/tke-existed-lbid: lb-24pehl4y
+  name: sz-cross-sh-service
+  namespace: prod
+spec:
+  type: LoadBalancer
+  ports:
+  - name: 80-80-tcp
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  - name: 14268-14268-tcp
+    port: 14268
+    protocol: TCP
+    targetPort: 14268
+  - name: 4317-4317-tcp
+    port: 4317
+    protocol: TCP
+    targetPort: 4317
+  - name: 5678-5678-tcp
+    port: 5678
+    protocol: TCP
+    targetPort: 5678
+  - name: 5679-5679-tcp
+    port: 5679
+    protocol: TCP
+    targetPort: 5679
+  - name: 9411-9411-tcp
+    port: 9411
+    protocol: TCP
+    targetPort: 9411
+  - name: 11800-11800-tcp
+    port: 11800
+    protocol: TCP
+    targetPort: 11800
+  - name: 14250-14250-tcp
+    port: 14250
+    protocol: TCP
+    targetPort: 14250
+  - name: 55678-55678-tcp
+    port: 55678
+    protocol: TCP
+    targetPort: 55678
+  - name: 55679-55679-tcp
+    port: 55679
+    protocol: TCP
+    targetPort: 55679
+  - name: 55680-55680-tcp
+    port: 55680
+    protocol: TCP
+    targetPort: 55680
+  selector:
+    k8s-app: tapm-collector
+    qcloud-app: tapm-collector
